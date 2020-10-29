@@ -20,7 +20,7 @@ public class BankAccount {
     }
     return false;
   }
-  public boolean withdrawl(double amount) {
+  public boolean withdraw(double amount) {
     if (amount >= 0 && balance - amount >= 0) {
       balance -= amount;
       return true;
@@ -28,6 +28,6 @@ public class BankAccount {
     return false;
   }
   public String toString() {
-    return accountID + "\\t" + String.valueOf(balance);
+    return accountID + "\t$" + String.valueOf(balance);
   }
 }
